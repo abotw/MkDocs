@@ -1,0 +1,32 @@
+site_name: My Docs
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - content.code.annotate
+    # - toc.integrate # 右侧生产目录
+    - navigation.tracking # 在url中使用标题定位锚点
+    - navigation.top # 一键回顶部
+    - navigation.sections # nav节点缩进
+# mkdocs.yml 相关配置
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  # 开始：列表
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # 结束：列表
+  - pymdownx.tabbed: # 内容标签栏
+      alternate_style: true
+  - attr_list
+  - md_in_html
